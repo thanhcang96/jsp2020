@@ -1,0 +1,181 @@
+body{
+	margin: 0;
+}
+header{
+	height: 100px;
+	background-color: #9DF0D9;
+}
+.flex-container{
+	display: inline-flex;
+
+}
+.header-top{
+	padding-top: 0px;
+	background-color: #E9DEDE;
+}
+.header-top{
+	height: 25px;
+	background-color: #D7E4E0;
+}
+.header-bottom{
+	background-color: #BEF3BD;
+}
+.dropdown-item{
+	background-color: pink;
+	color: blue;
+}
+.cart{
+	border: solid 1px #FCBA57;
+	height: 35px;
+	line-height: 28px;
+}
+.menu{
+	margin-left: 20%;
+}
+.boder{
+	border: solid 2px white;
+}
+.nav-link{
+	color: white;
+}
+.nav-link:hover{
+	color : yellow;
+}
+.image1{
+	background-color: red;
+}
+.main-left{
+	background-color: brown;
+	height: 250px;
+}
+.newbook{
+	border: solid 2px #000;
+}
+
+.book_item{
+	width: 20%;
+	height :15rem;
+	border: solid 2px #000;
+}
+.ft{
+	width: 30%;
+	border: solid 1px #000;
+	height: 150px;
+}
+.book_title{
+	background-color: pink;
+}
+.add{
+	border-radius: 25px;
+	border:solid 1px black;
+}
+.add:hover{
+	cursor: pointer;
+	color: red;
+	background-color: yellow;
+}
+<div class= "row">
+        			<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-2" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+        		</div>
+        		<div class= "row">
+        			<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+        		</div>
+        		<div class= "row">
+        			<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+            		<div class ="col-3" style="padding-right: 0px; padding-left: 0px;">
+               			<div class="card">
+	                  		<img class="card-img-top w-100" src="image/slide1.jpg"/>
+	                 	 	<h6 class="card-title text-center">Sheep</h6>
+	                  		<p class="card-text text-center">Info..</p>
+               			</div>
+            		</div>
+        		</div>
+        	</div>

@@ -1,0 +1,14 @@
+user.name = thanhcang
+user.email = locxoay.spkt.2503@gmail.com
+
+github
+thanhcang.spkt.96@gmail.com
+Az26101996
+thanhcang96
+d:\git_javaweb/tcx_javaweb
+
+bitbucket
+thanhcang.spkt.96@gmail.com
+AZ2610196
+THANHCANG
+D:\bitbucket_tcx/tcx_javaweb/tcx_thuctap

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+    <table class="table table-sm table-bordered">
+        <thead class="thead-dark">
+           <tr>
+              <th style="width:10%">No</th>
+              <th style="width: 30%;">Language</th>
+              <th>Percent</th>
+           </tr>
+        </thead>
+        <tbody class="table-primary">
+           <tr>
+              <td>1</td>
+              <td>Java</td>
+              <td>14.21%</td>
+           </tr>
+           <tr>
+              <td>2</td>
+              <td>C</td>
+              <td>11.03%</td>
+           </tr>
+           <tr>
+              <td>3</td>
+              <td>C++</td>
+              <td>5.60%</td>
+           </tr>
+        </tbody>
+     </table>
+     <div class="position:fixed container-fluid mt-3">
+        <h4 class="mb-2">Complex Form</h4>
+        <form>
+           <div class="form-row">
+              <div class="form-group col-sm-6">
+                 <label for="myEmail">Email</label>
+                 <input type="email" class="form-control"
+                    id="myEmail" placeholder="Email">
+              </div>
+              <div class="form-group col-sm-6">
+                 <label for="myPassword">Password</label>
+                 <input type="password" class="form-control"
+                    id="myPassword" placeholder="Password">
+              </div>
+           </div>
+           <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control"
+                 id="myAddress" placeholder="1234 Main St">
+           </div>
+           <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control"
+                 id="myAddress2" placeholder="Apartment, studio, or floor">
+           </div>
+           <div class="form-row">
+              <div class="form-group col-sm-6">
+                 <label for="myCity">City</label>
+                 <input type="text" class="form-control" id="myCity">
+              </div>
+              <div class="form-group col-sm-4">
+                 <label for="myState">State</label>
+                 <select id="myState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                 </select>
+              </div>
+              <div class="form-group col-sm-2">
+                 <label for="myZip">Zip</label>
+                 <input type="text" class="form-control" id="myZip">
+              </div>
+           </div>
+           <div class="form-group">
+              <div class="form-check">
+                 <input class="form-check-input" type="checkbox" id="myCheck">
+                 <label class="form-check-label" for="myCheck">
+                 Check me out
+                 </label>
+              </div>
+           </div>
+           <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+     </div>
+     <div class="btn-group dropright">
+        <button class="btn btn-primary dropdown-toggle"
+           type="button"
+           id="dropdownMenuButton" data-toggle="dropdown">
+        Login
+        </button>
+        <div class="dropdown-menu">
+           <form class="px-4 py-3">
+              <div class="form-group">
+                 <label for="exampleDropdownFormEmail1">Email address</label>
+                 <input type="email" class="form-control"
+                    id="exampleDropdownFormEmail1" placeholder="email@example.com">
+              </div>
+              <div class="form-group">
+                 <label for="exampleDropdownFormPassword1">Password</label>
+                 <input type="password" class="form-control"
+                    id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                 <label class="form-check-label" for="dropdownCheck">
+                 Remember me
+                 </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+           </form>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">New around here? Sign up</a>
+           <a class="dropdown-item" href="#">Forgot password?</a>
+        </div>
+     </div>
+     <div class="container mt-3">
+ 
+        <div class="alert alert-info">
+           <strong>Hi Tran!</strong> Welcome back!
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close">x</button>
+        </div>
+
+
+        <h4>Bootstrap Tutorials</h4>
+        <ul>
+           <li>Bootstrap Buttons</li>
+           <li>Bootstrap Form Groups</li>
+        </ul>
+     </div>
+     <h4 class="mb-4">Card Deck Responsive</h4>
+<div class="card-deck">
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">1 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">2 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-sm-block d-md-none">
+      <!-- wrap every 2 on sm-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">3 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-md-block d-lg-none">
+      <!-- wrap every 3 on md-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">4 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-sm-block d-md-none">
+      <!-- wrap every 2 on sm-->
+   </div>
+   <div class="w-100 d-none d-lg-block d-xl-none">
+      <!-- wrap every 4 on lg-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">5 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-xl-block">
+      <!-- wrap every 5 on xl-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">6 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-sm-block d-md-none">
+      <!-- wrap every 2 on sm-->
+   </div>
+   <div class="w-100 d-none d-md-block d-lg-none">
+      <!-- wrap every 3 on md-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">7 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">8 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-sm-block d-md-none">
+      <!-- wrap every 2 on sm-->
+   </div>
+   <div class="w-100 d-none d-lg-block d-xl-none">
+      <!-- wrap every 4 on lg-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">9. Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+   <div class="w-100 d-none d-md-block d-lg-none">
+      <!-- wrap every 3 on md-->
+   </div>
+   <div class="card mb-4">
+      <div class="card-body">
+         <h4 class="card-title">10 Card title</h4>
+         <p class="card-text">Card Text..</p>
+      </div>
+   </div>
+</div>
+<div class="container-fluid border border-primary mt-5">
+    <div class="border border-danger mt-5 mr-4 mb-4 ml-auto" style="width:100px;">
+      Div
+    </div>
+ </div>
+    </div>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

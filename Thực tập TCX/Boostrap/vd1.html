@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+   <!--NavBar and form-->
+   <nav class="navbar navbar-expand-sm navbar-dark bg-primary  ">
+      <a class="navbar-brand" href="#">o7planning</a>
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link">Java</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link">C/C++</a>
+         </li>
+      </ul>
+      <!-- Navbar-nav with FORM -->
+      <ul class="navbar-nav ml-auto">
+         <form class="form-inline" action="/somepage">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+         </form>
+      </ul>
+   </nav>
+    <div class= "container-fluid">
+        <div class= "row">
+           <div class ="col-md-2 bg-primary">
+             <p>col-md-2</p>
+           </div>
+           <div class ="col-md-3 bg-secondary">
+              <p>col-md-3</p>
+           </div>
+           <div class ="col-md-7 bg-success">
+              <p>col-md-7</p>
+           </div>
+        </div>
+     </div>
+     <div class="container-fluid">
+      <ul class="nav nav-tabs">
+         <li class="nav-item">
+            <a class="nav-link" href="#">Javascript</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link active" href="#">Bootstrap (Reading)</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link disabled" href="#">AngularJS (Comming Soon)</a>
+         </li>
+      </ul>
+     </div>
+
+     <ul class="nav nav-tabs" id="myTab">
+      <li class="nav-item">
+         <a class="nav-link" id="tab-javascript" data-toggle="tab"
+            href="#content-javascript">Javascript
+         </a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" id="tab-css" data-toggle="tab" href="#content-css">
+         CSS
+         </a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link active" id="tab-bootstrap" data-toggle="tab" href="#content-bootstrap">
+         Bootstrap
+         </a>
+      </li>
+   </ul>
+    
+   <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="content-javascript"> 
+         JavaScript is a cross-platform, object-oriented scripting language ...
+      </div>
+      <div class="tab-pane fade" id="content-css">
+         CSS stands for Cascading Style Sheets. ...
+      </div>
+      <div class="tab-pane fade show active" id="content-bootstrap">
+         Bootstrap is a free front-end framework for faster and easier web development...
+      </div>
+   </div>
+
+   <!--NavPill-->
+   <ul class="nav nav-pills">
+      <li class="nav-item">
+         <a class="nav-link" href="#">Javascript</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link active" href="#">Bootstrap</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link disabled" href="#">AngularJS (Comming Soon)</a>
+      </li>
+   </ul>
+
+   <h4>.navbar .navbar-expand-sm</h4>
+      <!-- A horizontal navbar that becomes vertical on small screens -->
+      <nav class="navbar navbar-expand-sm bg-dark">
+         <!-- Links -->
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Javascript</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Css</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Bootstrap</a>
+            </li>
+         </ul>
+      </nav>
+<!--collapsing navbar-->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+         <!-- Brand -->
+         <a class="navbar-brand" href="#">o7planning</a>
+ 
+         <!-- Toggler/collapsibe Button -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+ 
+         <!-- Navbar links -->
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Javascript</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Css</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Bootstrap</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <!-- Dropdown navbar-->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+         <!-- Brand -->
+         <a class="navbar-brand" href="#">o7planning</a>
+ 
+         <!-- Links -->
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Java</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">C/C++</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Front-end
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Javascript</a>
+                  <a class="dropdown-item" href="#">Css</a>
+                  <a class="dropdown-item" href="#">Bootstrap</a>
+               </div>
+            </li>
+         </ul>
+      </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

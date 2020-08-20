@@ -1,0 +1,220 @@
+﻿1. Các kiểu dữ liệu nguyên thủy:
+- Kiểu số nguyên: Integer Type – byte (1), short (2), int (4), long (8)
+- Kiểu só thập phân: Floating point – Float(4), Double(8)
+- Kiểu ký tự: Char, String
+- Kiểu logic: giá trị kiểu true false
+2. Kiểu dữ liệu tham chiếu/đối tượng
+- Khi chúng ta gọi một phương thức và truyền một tham chiếu cho phương thức đó được gọi là truyền tham chiếu.
+- Việc thay đổi giá trị của biến tham chiếu bên trong phương thức làm thay đổi giá trị gốc của nó.
+- Tính tham trị bản chất của nó chỉ là thao tác trực tiếp trên địa chỉ tham chiếu, khi thay đổi thì giá trị gốc bị thay đổi theo.
+3. Difference between int & INTEGER.(Sự khác nhau giữa int và Interger)
+- Với int là kiểu nguyên thủy(tham trị) còn Interger là kiểu tham chiếu. Thì: 
+- Nếu chúng ta gọi một phương thức và truyền một giá trị cho phương thức đó được gọi là truyền giá trị(tham trị).
+Nó chỉ ảnh hưởng bên trong phương thức, không ảnh hưởng bên ngoài phương thức(giá trị được thay đổi bên trong phương thức không ảnh hưởng tới giá trị bên ngoài).
+Tính tham trị bản chất của nó chỉ là copy giá trị của 1 địa chỉ khác để tạo ra 1 địa chỉ ô nhớ mới có cùng giá trị với địa chỉ copy
+- Ví dụ:	int b = 0;
+	void a(int b) {b = b + 1}. kq in ra b = 0;
+- Khi chúng ta gọi một phương thức và truyền một tham chiếu cho phương thức đó được gọi là truyền tham chiếu.
+Việc thay đổi giá trị của biến tham chiếu bên trong phương thức làm thay đổi giá trị gốc của nó.
+Tính tham trị bản chất của nó chỉ là thao tác trực tiếp trên địa chỉ tham chiếu, khi thay đổi thì giá trị gốc bị thay đổi theo.
+- Ví dụ: 	class c {int b = 0;
+		void a(c c) {c.b = c.b + 1}. kq in ra b = 1;
+	}
+4. Autoboxing và Unboxing trong Java là gì?
+- Autoboxing hay Boxing là quá trình chuyển dữ liệu từ kiểu tham trị sang kiểu tham chiếu. 
+Quá trình boxing một biến kiểu tham trị sẽ khởi tạo một đối tượng trong vùng nhớ Heap và copy giá 
+trị của biến tham trị vào đối tượng mới này. Và quá trình boxing được thực hiện nhờ quá trình chuyển đổi ngầm định.
+- Ví dụ: int num = 1;
+        Integer obj1 = new Integer(num);
+- Unboxing là quá trình ngược lại với Boxing, tức là đưa từ kiểu tham chiếu ra kiểu tham trị. Quá trình này sẽ được thực hiện một cách tường minh. Gồm có 2 bước :
+Bước 1 : Kiểm tra chắc chắn rằng đối tượng đã được boxing đúng kiểu giá trị đưa ra.
+Bước 2 : Copy giá trị sang biến dữ liệu kiểu tham trị.
+- Ví dụ:  Integer obj = new Integer(1);
+        int num = obj ; // unboxing
+- Ngoài ra, Các wrapper class là các đối tượng, do vậy khi ta ”khai báo kiểu Wrapper”  thì giá trị mặc định được gán là null, 
+còn đối với kiểu “khai báo kiểu nguyên thuỷ” thì giá trị mặc định được gán là 0.
+5. Trong java có các loại Access Modifier nào? Phạm vi truy cập ra sao?
+- Có 4 loại access modifier:
+Private: Cùng class
+Default: Cùng class, cùng package.
+Protected: Cùng class, cùng package, class con khác package.
+Public: Cùng class, cùng package, class con khác package, class khác package.
+6. Could you describe about "Strong typed"?(bạn có thể mô tả gì về Strong typed)
+- Kiểm tra biến tại compile time.
+- weak typed: kiểm tra biến tại runtime.
+7. Static là gì?
+- Tham chiếu thuộc tính chung của tất cả các đối tượng.
+- Thuộc lớp chứ không thuộc đối tượng của lớp.
+- Gọi mà không cần tạo một instance(yêu cầu) của một lớp.(Không cần new đối tượng)
+- Có thể truy cập biến static và có thể thay đổi giá trị của nó.
+- Phương thức main là static vì không cần thiết phải tạo đối tượng để gọi phương thức static. Nếu nó là phương thức non-static, JVM(máy ảo) 
+đầu tiên tạo đối tượng và sau đó gọi phương thức main() mà có thể gây ra vấn đề về cấp phát bộ nhớ, bộ nhớ phụ.
+- Đọc thêm: Biến tĩnh là biến sẽ được tạo ra duy nhất một lần khi gọi hàm lần đầu tiên và nó sẽ không bị xóa đi để tạo lại khi gọi lại hàm ấy.
+8. Describe the principles of OOPs. (mô tả các nguyên tắc của OOP)
+- Abstraction(Trừu tượng)
+- Encapsulation(Đóng gói)
+- Inheritance(Kế thừa)
+- Polymorphism(Trừu tượng)
+9. Explain about Polymorphism(Giải thích về đa hình)
+- Trong tình tình huống, hoàn cảnh khác nhau thì có trạng thái khác nhau
+- Override, overload method
+- Increase flexibility(Tăng tính linh hoạt).
+10. Explain about Inheritance.(Giải thích về kế thừa)
+- Tái sử dụng code
+- Extends class(chỉ có thể kế thừa 1 class), implement interface(có thể implement nhiều interface)
+- Is – a relationship.(Quan hệ is a)
+(ví dụ quan hệ is a: con mèo kế thừa động vật. Đọc là: con mèo là động vật)
+(ví dụ quan hệ has a: con mèo có thuộc tính là tai và đuôi. Đọc là: con mèo có tai, con mèo có đuôi)
+11. Explain about Encapsulation(Giải thích về đóng gói)
+- Hiding information and data(ẩn thông tin và dữ liệu)
+- Use access modifier(public, protected, default, private) - (Sử dụng access modifier)
+12. Explain about the different forms of Polymorphism(giải thích thế nào là các hình thái khác nhau trong đa hình)
+- Override(ghi đè)
+- overload(nạp chồng)
+- Anonymous class(lớp vô danh) -(không có tên cụ thể, gắn liền với kế thừa và interface)
+(ví dụ: NhanVien nhanVien = new NhanVien() {
+	các_thuộc_tính;
+	các_phương_thức;
+}
+13. What is the difference between method overloading and method overriding?(sự khác nhau giữa phương thức nạp chồng và ghi đè)
+- Java method has five elements: modifiers, return types, names, parameters, exceptions
+(Phương thức Java có 5 phần tử là: modifiers, kiểu trả về, tên, tham số, ngoại lệ
+- Overloading method: 
++ Same name (Cùng tên nhưng khác tham số truyền vào.)
++ Others are flexible
+- Overriding: 
++ Same name(Cùng tên)
++ Same parameters (number and type, order)-(Cùng tham số(số, kiểu, loại)
++ Access modifier is less restrict(Truy cập modifier ít hạn chế hơn) 
++ Return type: same type or covariant type. (equal or narrower)(cùng loại hoặc cùng kiểu convariant(bằng hoặc hẹp hơn))
++ Exception: Checked exception (equal or narrower); flexible runtime exceptions
+(Ngoại lệ: Đã kiểm tra ngoại lệ (bằng hoặc hẹp hơn); ngoại lệ tại runtime linh hoạt)
+14. What is dynamic binding?(Ràng buộc động là gì)
+- Binding: Association between reference and actual object.
+(Binding: Ràng buộc giữa đối tượng tham chiếu và đối tượng thực tế.)
+- Binding at runtime (Overriding method).(Ràng buộc động tại runtime. Ví dụ cat extends animal. cat c = new cat)
+- Static binding: at compile time.(Ràng buộc tĩnh tại thời gian biên dịch. Ví dụ cat extends animal. anime a = new cat. Kq in ra base của cat)
+15. Explain about "Abstraction"?(giải thích về trừu tượng)
+- Increase extendability.(tăng khả năng mở rộng)
+- Increase abstraction of layered architecture.(Tăng sự trừu tượng của kiến ​​trúc lớp)
+- Use interface or abstract class.(sử dụng interface hoặc lớp trừu tượng)
+16. Could you explain "composition" and "inheritance" in JAVA?(Bạn có thể giải thích thành phần và thừa kế trong java hay không?)
+(Is a va has a)
+- Composition: Has – a relationship. (Famous example: Object Adapter pattern(mẫu bộ chuyển đổi đối tượng))
+- Inheritance: Is – a relationship. (Class adapter pattern - mẫu bộ chuyển đổi lớp).
+17. Exception handling with composition and inheritance?(xử lí ngoại lệ với thành phần và thừa kế thừa)
+Inheritance:
+- An overriding method can throw any uncheck exceptions
+Java Question Bank for Interviews
+- An overriding method can throw narrower or fewer exceptions than the overridden method.
+Composition:
+- Use try-catch block or throws exception when re-use method which throws exception
+(Kế thừa:
+- Một phương thức ghi đè có thể đưa ra bất kỳ trường hợp ngoại lệ nào
+- Một phương thức ghi đè có thể ném các ngoại lệ hẹp hơn hoặc ít hơn so với phương pháp ghi đè.
+Thành phần:
+- Sử dụng khối thử bắt hoặc ném ngoại lệ khi sử dụng lại phương thức ném ngoại lệ)
+18. What are differences between abstract class and interface?(sự khác nhau giữa lớp trừu tượng và interface)
+- abstract class có ít nhất 1 phương thức trừu tượng trong khi interface là tất cả các phương thức đều là trừu tượng
+- Một lớp chỉ có thể extends một lớp abstract. Tuy nhiên, một lớp có thể implament nhiều interface.
+19. How can we obtain an array from an ArrayList class?(Làm thế nào chúng ta có thể có được một mảng từ một lớp ArrayList?)
+- Use toArray() method.(Sử dụng phương thức toArray(0
+- Arrays.asList(array). (Vice-versa. Note: cannot remove element from list)
+(Ngược lại. Lưu ý: không thể xóa phần tử khỏi danh sách)
+20. What is garbage collection? Can we enforce garbage collection to perform?
+(Thu gom rác là gì? Chúng ta có thể thực thi thu gom rác để thực hiện không?)
+Java garbage collection is the process by which Java programs perform automatic memory management.
+- JVM mechanism for collecting unused objects and removing them.
+- Purpose: optimize and save memory.
+- Your best option is to call System.gc() which simply is a hint to the garbage collector
+that you want it to do a collection. There is no way to force and immediate collection
+though as the garbage collector is non-deterministic.
+(Thu gom rác Java là quá trình các chương trình Java thực hiện tự động quản lý bộ nhớ.
+- Cơ chế JVM để thu thập các đối tượng không sử dụng và loại bỏ chúng.
+- Mục đích: tối ưu hóa và tiết kiệm bộ nhớ.
+- Tùy chọn tốt nhất của bạn là gọi System.gc () đơn giản là một gợi ý cho trình thu gom rác
+mà bạn muốn nó làm một bộ sưu tập. Không có cách nào để buộc và thu ngay lập tức
+mặc dù như người thu gom rác là không xác định.)
+21.  What meaning of String immutable? Can you explain the concept?(Ý nghĩa của chuỗi bất biến(bất biến là không bị thay đổi)? Bạn có thể giải thích khái niệm này?)
+- When modifying a String, a new String object is created in memory, stored in the
+String pool and the instance refers to the new object.
+(- Khi sửa đổi Chuỗi, một đối tượng Chuỗi mới được tạo trong bộ nhớ, được lưu trữ trong
+Chuỗi pool và thể hiện đề cập đến đối tượng mới.)
+22. Describe the basic steps to reverse a string?
+- Opt1: When modifying a String, a new String object is created in memory, stored in
+the String pool and the instance refers to the new object.
+- Opt2: Use the built in reverse() method of the StringBuilder.
+- Opt3: Convert the input string into the character array by using toCharArray() built in
+method. Then add the characters of the array into the LinkedList object. Use built in
+reverse() method for the Collections class
+(Mô tả các bước cơ bản để đảo ngược một chuỗi?
+- Opt1: Khi sửa đổi Chuỗi, một đối tượng Chuỗi mới được tạo trong bộ nhớ, được lưu trữ trong
+chuỗi String và thể hiện đề cập đến đối tượng mới.
+- Opt2: Sử dụng phương thức Reverse () tích hợp của StringBuilder.
+- Opt3: Chuyển đổi chuỗi đầu vào thành mảng ký tự bằng cách sử dụng toCharArray () tích hợp
+phương pháp. Sau đó thêm các ký tự của mảng vào đối tượng LinkedList. Sử dụng tích hợp
+phương thức Reverse () cho lớp Bộ sưu tập)
+23. What is Pass by Value and Pass by reference? Does Java support both of them?
+Pass by value:
+- Pass only the bit-pattern (copy) of value.
+- Method can’t change the variable value.
+Pass by reference:
+- Receive a pointer of variable.
+- Java only supports Pass by value
+(Truyền theo giá trị:
+- Chỉ truyền mẫu bit (bản sao) của giá trị.
+- Phương pháp có thể thay đổi giá trị biến.
+Tham chiếu:
+- Nhận một con trỏ của biến.
+- Java chỉ hỗ trợ Truyền theo giá trị)
+24. What is the difference between error and exception?(Sự khác nhau giữa error và exception)
+Error:
+- Irrecoverable condition occurred at run-time(không thể phục hồi tại runtime)
+- Can’t repair at run-time(có thể sửa chữa tại runtime)
+- Eg: OutOfMemory
+- Lỗi do hệ thống.
+Exception:
+- Caused by bad input(Có thể do đầu vào xấu)
+- Can handle(có thể xử lí)
+- Eg: NullPointerException, IndexOutOfBoundException…
+- Lỗi do lập trình viên khai báo.
+Có hai loại ngoại lệ chính là checked và unchecked. 
+- Checked: IDE tự động nhắc nhở khi thao tác(Nghĩa là được kiểm tra tại compile time(trước khi run chương trình -chương trình báo lỗi trước khi chạy))
++ Là những loại thao tác với dữ liệu như SQLException, Exception, RuntimeException và Error,..
+Unchecked: IDE không nhắc nhở khi thao tác(Vì được check tại runtime(chương trình chạy mới báo lỗi))
++ Là những loại thao tác xử lí như NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException,...
+25. Kể các collection biết. Phân biệt list và linklist. Add dãy 10 số từ 0 -10 thì nên dùng cái nào?
+- Set: Là một collection không thể chứa 2 giá trị trùng lặp
++ SortedSet: là một Set chứa các phần tử theo thứ tự tăng dần.
+- List:là một collection có thứ tự (đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp. 
+Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số (vị trí của chúng).
+- Queue (hàng đợi): là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Bên cạnh các thao tác cơ bản của collection, 
+Queue cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Queue có thể được sử dụng như là FIFO (first-in, first-out – vào trước, ra trước)
+- Deque: Tương tự như Queue, ngoài ra còn có thể sử dụng LIFO (last-in, first-out – vào sau, ra trước). 
+Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu.
+- Map: là một đối tượng ánh xạ mỗi key tương úng với một giá trị. Map không thể chứa giá trị trùng lặp. Mỗi key có thể ánh xạ đến nhiều nhất một giá trị.
++ SortedMap: là một Map chứa các phần tử được sắp xếp theo thứ tự tăng dần của key của chúng. 
+Các SortedMap được sử dụng cho các collection theo thứ tự tự nhiên của cặp key/value.
+- Sự khác nhau giữa List và linkList
++ List: Sử dụng một mảng động, không hiệu quả với thao tác vì cần nhiều chuyển đổi, tốt hơn dùng để lưu trữ và lấy dữ liệu.
++ LinkList: Sử dụng danh sách liên kết doubly, hiệu quả cho thao tác, tốt hơn dùng để thao tác dữ liệu.
+Dựa vào sự khác biệt trên thì nên dùng list để lưu dãy số từ 0-10.
+26. What are differences between ArrayList and Vector? (Sự khác nhau giữa ArrayList và Vecter)
+- ArrayList: 
++ No synchronization(Không đồng bộ hóa)
++ Increase 50% capacity. (tăng 50% kích thước hiện tại nếu số phần tử vượt quá khả năng chứa của nó.)
+- Vector:
++ Synchronization(đồng bộ hóa)
++ Double capacity when full size.(Vector tăng 100% nghĩa là tăng gấp đôi kích thước hiện tại nếu số phần tử vượt quá khả năng chứa của nó)
+27. What is Iterator? How to use it? (Iterator là gì? Làm sao sử dụng nó)
+- Iterator để duyệt các phần tử.
+- Methods: hasNext(), next(), remove();  
+28. Khi nào sử dụng Iterator?
+- Duyệt các phần tử từ đầu đến cuối của một collection.
+- Iterator cho phép xóa phần tử khi lặp một collection.
+29. What equals() and hashCode() method respond for? (phương thức equals() và hashCode để làm gì?)
+- Kiểm tra null, kiểm tra thể hiện, so sánh các thuộc tính.
+- Để tối ưu cho việc tìm kiếm, Java sử dụng các hash value lấy từ phương thức hashCode() của các đối tượng key để gom nhóm các đối tượng này trong những cái gọi là các bucket.
+Mỗi bucket tương ứng với một giá trị hash value. Khi tìm kiếm một đối tượng bất kỳ trong HashMap hay HashTable, đầu tiên Java sẽ lấy hash value của đối tượng 
+key mà chúng ta muốn tìm kiếm. Sau đó nó sẽ kiểm tra các bucket để xem giá trị hash value đó có trùng khớp với bucket nào hay không. 
+Nếu thoả mãn một bucket nào đó thì Java sẽ trả về giá trị của đối tượng value mà chúng ta muốn tìm kiếm.
