@@ -1,0 +1,11 @@
+package Entities;
+
+public class sanpham {
+	private int idSanPham;
+	private String tenSanPham;
+	private String thongTinSanPham;
+	private String anh;
+	private int giaBan;
+	private String idLoaiSanPham;
+	private int soLuongCon;
+}

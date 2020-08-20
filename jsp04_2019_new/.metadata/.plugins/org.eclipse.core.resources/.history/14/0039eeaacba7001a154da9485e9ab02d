@@ -1,0 +1,12 @@
+package Entities;
+
+public class taikhoan {
+	private int idTaiKhoan;
+	private String tenTaihoan;
+	private String matKhau;
+	private int phanQuyen;
+	private String hoTen;
+	private String diaChi;
+	private String sdt;
+	private String email;
+}

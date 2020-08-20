@@ -1,0 +1,10 @@
+package Entities;
+
+public class hoadonchitiet {
+	private int idHoaDonChiTiet;
+	private int idHoaDon;
+	private int idSanPham;
+	private int soLuongMua;
+	private int giaDat;
+	
+}

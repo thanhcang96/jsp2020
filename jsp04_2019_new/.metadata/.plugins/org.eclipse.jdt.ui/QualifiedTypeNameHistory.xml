@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="tcx_java.Phone"/>
+<fullyQualifiedTypeName name="tcx_java.PhoneBooks"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.ListIterator"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="tcx_java.info"/>
+<fullyQualifiedTypeName name="JDBC.ISinhVien.ImpSinhVien"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="Connection.ConnectionUtils"/>
+<fullyQualifiedTypeName name="JDBC.ISinhViens.ILopDao"/>
+<fullyQualifiedTypeName name="JDBC.Entities.Lop"/>
+<fullyQualifiedTypeName name="JDBC.ISinhVien.IQuanLySVDao"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="JDBC.Entities.SinhVien"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.adminDao.IChiTietHoaDonDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.adminDao.IHoaDonDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.adminDao.ISanPhamDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.adminDao.ILoaiSanPhamDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.adminDao.ITaiKhoanDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.userDao.IChiTietHoaDonDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.userDao.IHoaDonDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.userDao.ILoaiSanPhamDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.userDao.ISanPhamDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.dao.userDao.ITaiKhoanDao"/>
+<fullyQualifiedTypeName name="datn.shopphukien.beans.TaiKhoan"/>
+<fullyQualifiedTypeName name="datn.shopphukien.beans.SanPham"/>
+<fullyQualifiedTypeName name="datn.shopphukien.beans.HoaDon"/>
+<fullyQualifiedTypeName name="datn.shopphukien.beans.ChiTietHoaDon"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.catalina.servlet4preview.RequestDispatcher"/>
+<fullyQualifiedTypeName name="datn.shopphukien.controler.adminsevlet.LoaiSanPhamSevlet"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="datn.shopphukien.connect.ConnectionUntils"/>
+<fullyQualifiedTypeName name="datn.shopphukien.impl.admin.LoaiSanPhamDaoImlp"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="sun.font.LayoutPathImpl"/>
+<fullyQualifiedTypeName name="datn.shopphukien.beans.LoaiSanPham"/>
+</qualifiedTypeNameHistroy>
